@@ -2,7 +2,7 @@
  
  这是一个展示网络请求数据的库，提供了一个默认的Okhttp的Interceptor拦截器使用，或者用户自定义自己的请求数据
  ## 效果
-  ![image](https://github.com/fafawee/NetWindow/blob/master/pic/Screenshot_1578446922.png)
+  ![IMAGE1](https://github.com/fafawee/NetWindow/blob/master/pic/Screenshot_1578446922.png?raw=true)
 
 ## 如何使用
 #### 1、初始化NetWindow
