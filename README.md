@@ -109,7 +109,7 @@ NetWindow.instance.getConfig().setInterfaceName(new InterfaceName() {
 NetWindowUtils.fromJson(String)
 ## 依赖方式
 ```
-implementation 'com.github.fafawee:FAdapter:1.0.3'
+implementation 'com.github.fafawee:NetWindow:1.0.4'
  
 ```
 需要jitpack仓库的支持
