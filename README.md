@@ -2,7 +2,7 @@
  
  这是一个展示网络请求数据的库，提供了一个默认的Okhttp的Interceptor拦截器使用，或者用户自定义自己的请求数据
  ## 效果
- ![hah](/pic/Screenshot_1578446922.png)
+ ![hah](https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2476018594,4050953303&fm=111&gp=0.jpg)
 ## 如何使用
 #### 1、初始化NetWindow
 在Application初始化NetWindow， NetWindow.init(this);
