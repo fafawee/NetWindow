@@ -11,10 +11,7 @@ import com.fagawee.netwindow.LogWindowEntity;
 import com.fagawee.netwindow.NetMessagePoster;
 import com.fagawee.netwindow.RequestMessage;
 import com.fagawee.netwindow.ResponseMessage;
-import com.lzy.okgo.OkGo;
-import com.lzy.okgo.callback.StringCallback;
-import com.lzy.okgo.model.Response;
-import com.lzy.okgo.request.base.ProgressRequestBody;
+
 
 import org.w3c.dom.Text;
 
@@ -31,6 +28,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
 
+                /*
                 String json="{\n" +
                         "\t\"ls\": \"d\"\n" +
                         "}";
@@ -47,7 +45,7 @@ public class MainActivity extends Activity {
                                 super.onFinish();
                             }
                         });
-
+*/
 
                 Intent intent=new Intent(MainActivity.this,Main2Activity.class);
                 startActivity(intent);
@@ -64,7 +62,7 @@ public class MainActivity extends Activity {
         requestMessage.setRequest("请求信息，用户自己定义,例如包含了url,参数、header");
         //这个是请求id，到时候需要和发送返回消息的id要一致，因为要配对，用户自己逻辑定义
         requestMessage.setId(222111);
-        NetMessagePoster.defaultPoster.postRequest(requestMessage);
+        //NetMessagePoster.defaultPoster.postRequest(requestMessage);
         /*
         *
         * *
@@ -82,7 +80,7 @@ public class MainActivity extends Activity {
         responseMessage.setId(222111);
         long duration=System.currentTimeMillis()-start;
         responseMessage.setTime(duration+"");
-        NetMessagePoster.defaultPoster.postResponse(responseMessage);
+        //NetMessagePoster.defaultPoster.postResponse(responseMessage);
 
 
 

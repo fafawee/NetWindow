@@ -9,12 +9,7 @@ import com.fagawee.netwindow.NetInterpoter;
 import com.fagawee.netwindow.NetWindow;
 import com.fagawee.netwindow.NetWindowConfig;
 import com.fagawee.netwindow.NetWindowUtils;
-import com.lzy.okgo.OkGo;
-import com.lzy.okgo.cache.CacheEntity;
-import com.lzy.okgo.cache.CacheMode;
-import com.lzy.okgo.cookie.CookieJarImpl;
-import com.lzy.okgo.cookie.store.DBCookieStore;
-import com.lzy.okgo.model.HttpHeaders;
+
 
 import org.apache.http.params.HttpParams;
 
@@ -37,10 +32,10 @@ public class MyApplication extends Application{
                 return url;
             }
         });
-        init(this);
+        //init(this);
     }
 
-
+/*
 
     public static void init(Application application) {
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
@@ -67,5 +62,5 @@ public class MyApplication extends Application{
 
     }
 
-
+*/
 }
