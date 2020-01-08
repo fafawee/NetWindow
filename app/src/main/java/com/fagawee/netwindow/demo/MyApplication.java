@@ -34,7 +34,7 @@ public class MyApplication extends Application{
         NetWindow.instance.getConfig().setInterfaceName(new InterfaceName() {
             @Override
             public String getShowInterfaceName(String url) {
-                return null;
+                return url;
             }
         });
         init(this);

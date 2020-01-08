@@ -2,7 +2,7 @@ package com.fagawee.netwindow;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import android.annotation.NonNull;
 import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
 import android.text.util.Linkify;

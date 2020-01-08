@@ -14,6 +14,7 @@ import com.fagawee.netwindow.ResponseMessage;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.StringCallback;
 import com.lzy.okgo.model.Response;
+import com.lzy.okgo.request.base.ProgressRequestBody;
 
 import org.w3c.dom.Text;
 
@@ -30,7 +31,11 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
 
-                OkGo.<String>get("http://ydtstbmedia.medrd.com:9999/api/telecontrol/remote/control/qrCode?serialNumber=7484E104702D")
+                String json="{\n" +
+                        "\t\"ls\": \"d\"\n" +
+                        "}";
+                OkGo.<String>post("http://api.medrd.com/api/user/getWeather?did=7484E1047010")
+                        .upJson(json)
                         .execute(new StringCallback() {
                             @Override
                             public void onSuccess(Response<String> response) {

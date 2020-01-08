@@ -2,8 +2,6 @@ package com.fagawee.netwindow;
 
 import android.text.TextUtils;
 
-import com.lzy.okgo.request.base.ProgressRequestBody;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.EOFException;
@@ -61,8 +59,9 @@ public class NetInterpoter implements Interceptor{
                 for (int i = 0; i < formBody.size(); i++) {
                     requestBody = requestBody + "name:" + formBody.name(i) + "---value:" + formBody.value(i) + "\n";
                 }
-            } else if (requestBodybody instanceof ProgressRequestBody) {
-                ProgressRequestBody progressRequestBody = (ProgressRequestBody) requestBodybody;
+            }
+            else
+            {
 
                 ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 
@@ -71,7 +70,7 @@ public class NetInterpoter implements Interceptor{
                 BufferedSink bufferedSink = null;
                 sink = Okio.sink(byteArrayOutputStream);
                 bufferedSink = Okio.buffer(sink);
-                progressRequestBody.writeTo(bufferedSink);
+                requestBodybody.writeTo(bufferedSink);
 
                 sink.flush();
                 bufferedSink.flush();
@@ -93,8 +92,10 @@ public class NetInterpoter implements Interceptor{
                 sink.close();
                 bufferedSink.close();
                 byteArrayOutputStream.close();
-                //requestBody=progressRequestBody.writeTo();
             }
+
+
+
 
 
         }

@@ -1,10 +1,10 @@
 package com.fagawee.netwindow;
 
+import android.annotation.NonNull;
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.support.annotation.NonNull;
 import android.view.Window;
 
 /**

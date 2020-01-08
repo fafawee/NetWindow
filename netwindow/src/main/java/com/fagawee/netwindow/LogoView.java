@@ -2,7 +2,7 @@ package com.fagawee.netwindow;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.annotation.Nullable;
+import android.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.Gravity;

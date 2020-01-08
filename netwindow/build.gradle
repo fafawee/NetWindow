@@ -32,8 +32,7 @@ android {
 
 dependencies {
     compileOnly fileTree(dir: 'libs', include: ['*.jar'])
-    compileOnly 'com.android.support:appcompat-v7:26.1.0'
-    compileOnly 'com.lzy.net:okgo:3.0.4'
+    compileOnly 'com.squareup.okhttp3:okhttp:3.8.1'
 
 }
 
