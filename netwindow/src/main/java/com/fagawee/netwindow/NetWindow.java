@@ -1,16 +1,16 @@
 package com.fagawee.netwindow;
 
-import android.annotation.SuppressLint;
+
 import android.app.Activity;
 import android.app.Application;
-import android.net.NetworkConfig;
+
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.widget.FrameLayout;
-import android.widget.TextView;
 
-import com.android.internal.policy.DecorView;
+import android.widget.FrameLayout;
+
+
+
 
 /**
  * Created by Mr.Tian on 2020/1/7.
@@ -61,15 +61,15 @@ public class NetWindow {
             public void onActivityStarted(Activity activity) {
             }
 
-            @SuppressLint("ResourceType")
+
             @Override
             public void onActivityResumed(Activity activity) {
                 View view=activity.getWindow().getDecorView();
-                View lo=view.findViewById(R.string.logoid);
+                View lo=view.findViewWithTag("tag");
                 if(lo==null)
                 {
                     LogoView logoView=new LogoView(activity);
-                    logoView.setId(R.string.logoid);
+                    logoView.setTag("tag");
                     FrameLayout.LayoutParams parentParams=new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,FrameLayout.LayoutParams.MATCH_PARENT);
                     activity.addContentView(logoView,parentParams);
 

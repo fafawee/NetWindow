@@ -2,7 +2,6 @@ package com.fagawee.netwindow;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -27,12 +26,12 @@ public class LogoView extends LinearLayout{
         init();
     }
 
-    public LogoView(Context context, @Nullable AttributeSet attrs) {
+    public LogoView(Context context,  AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public LogoView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public LogoView(Context context,  AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
     }

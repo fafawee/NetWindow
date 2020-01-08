@@ -1,6 +1,5 @@
 package com.fagawee.netwindow;
 
-import android.annotation.NonNull;
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
@@ -13,7 +12,7 @@ import android.view.Window;
 
 public class FDialog extends Dialog {
 
-    public FDialog(@NonNull Context context) {
+    public FDialog( Context context) {
         super(context);
         setDialogTheme();
     }

@@ -2,7 +2,6 @@ package com.fagawee.netwindow;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.annotation.NonNull;
 import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
 import android.text.util.Linkify;
@@ -49,7 +48,7 @@ public class LogDialog extends FDialog {
     public void setData(LogWindowEntity data) {
         this.data = data;
     }
-    public LogDialog(@NonNull Context context) {
+    public LogDialog( Context context) {
         super(context);
     }
 

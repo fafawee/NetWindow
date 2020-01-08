@@ -31,9 +31,9 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
     compileOnly 'com.android.support:appcompat-v7:26.1.0'
-    api 'com.squareup.okhttp3:okhttp:3.8.1'
+    compileOnly 'com.squareup.okhttp3:okhttp:3.8.1'
 
 }
 

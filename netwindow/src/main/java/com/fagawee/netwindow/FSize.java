@@ -2,7 +2,7 @@ package com.fagawee.netwindow;
 
 import android.util.Size;
 
-import static com.android.internal.util.Preconditions.checkNotNull;
+
 
 /**
  * Created by Mr.Tian on 2020/1/7.
@@ -108,7 +108,6 @@ public final class FSize {
      */
     public static FSize parseSize(String string)
             throws NumberFormatException {
-        checkNotNull(string, "string must not be null");
 
         int sep_ix = string.indexOf('*');
         if (sep_ix < 0) {

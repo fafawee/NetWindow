@@ -3,7 +3,6 @@ package com.fagawee.netwindow;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.annotation.NonNull;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -26,7 +25,7 @@ public class LogWindowDialog extends FDialog {
 
 
 
-    public LogWindowDialog(@NonNull Context context) {
+    public LogWindowDialog( Context context) {
         super(context);
     }
 
